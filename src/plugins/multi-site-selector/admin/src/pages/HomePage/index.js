@@ -62,7 +62,7 @@ const HomePage = () => {
       <ContentLayout>
         <Select
           id="site-selector"
-          placeholder="Chose which site you'd like to load"
+          placeholder="Choose which site you'd like to load"
           value={selectedOption}
           onChange={setSelectedOption}
         >
