@@ -22,23 +22,18 @@ const HomePage = () => {
   const [selectorLink, setSelectorLink] = useState([
     {
       id: 1,
-      link: "http://localhost:8000/",
+      link: "https://global-orca-jqw2m.ondigitalocean.app",
       label: "Global Data",
     },
     {
       id: 2,
-      link: "https://wwww.yahoo.com",
-      label: "Site 1",
+      link: "https://https://stingray-app-y8uge.ondigitalocean.app/",
+      label: "Stingray Site",
     },
     {
       id: 3,
-      link: "https://www.strapi.io",
-      label: "Site 2",
-    },
-    {
-      id: 4,
-      link: "https://www.microsoft.com",
-      label: "Site 3",
+      link: "https://lobster-app-c8jbm.ondigitalocean.app/",
+      label: "Lobster Site",
     },
   ]);
 
