@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.7.1",
     "better-sqlite3": "8.0.1",
     "nanoid": "^4.0.1",
+    "passport-google-oauth2": "^0.2.0",
     "pg": "^8.10.0"
   },
   "author": {

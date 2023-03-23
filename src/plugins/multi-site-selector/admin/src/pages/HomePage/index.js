@@ -27,7 +27,7 @@ const HomePage = () => {
     },
     {
       id: 2,
-      link: "https://https://stingray-app-y8uge.ondigitalocean.app/admin",
+      link: "https://stingray-app-y8uge.ondigitalocean.app/admin",
       label: "Stingray Site",
     },
     {
