@@ -22,17 +22,17 @@ const HomePage = () => {
   const [selectorLink, setSelectorLink] = useState([
     {
       id: 1,
-      link: "https://global-orca-jqw2m.ondigitalocean.app",
+      link: "https://global-orca-jqw2m.ondigitalocean.app/admin",
       label: "Global Data",
     },
     {
       id: 2,
-      link: "https://https://stingray-app-y8uge.ondigitalocean.app/",
+      link: "https://https://stingray-app-y8uge.ondigitalocean.app/admin",
       label: "Stingray Site",
     },
     {
       id: 3,
-      link: "https://lobster-app-c8jbm.ondigitalocean.app/",
+      link: "https://lobster-app-c8jbm.ondigitalocean.app/admin",
       label: "Lobster Site",
     },
   ]);
