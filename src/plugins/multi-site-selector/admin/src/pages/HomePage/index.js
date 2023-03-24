@@ -38,7 +38,8 @@ const HomePage = () => {
 
   const [selectedOption, setSelectedOption] = useState("");
 
-  const currentSite = window.location.origin + "/plugins/multi-site-selector";
+  const currentSite =
+    window.location.origin + "/admin/plugins/multi-site-selector";
 
   function clearSelected() {
     setSelectedOption("");
