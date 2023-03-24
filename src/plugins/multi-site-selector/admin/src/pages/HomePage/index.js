@@ -21,7 +21,7 @@ const HomePage = () => {
   const [selectorLink, setSelectorLink] = useState([
     {
       id: 1,
-      link: "https://global-orca-jqw2m.ondigitalocean.app/admin/",
+      link: "https://global-orca-jqw2m.ondigitalocean.app/admin",
       label: "Global Data",
     },
     {
