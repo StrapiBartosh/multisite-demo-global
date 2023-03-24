@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_abouts",
+  "info": {
+    "singularName": "global-about",
+    "pluralName": "global-abouts",
+    "displayName": "Global About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "pageName"
+    },
+    "pageContent": {
+      "type": "richtext"
+    }
+  }
+}
