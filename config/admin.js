@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
       {
         uid: "github",
         displayName: "Github",
-        icon: "http://localhost:1337/uploads/github_logo_vector_4744e8d8a7.png",
+        icon: "https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png",
         createStrategy: (strapi) =>
           new GithubStrategy(
             {
