@@ -9,20 +9,19 @@ import React, { useState } from "react";
 import {
   Select,
   Option,
+  Layout,
   HeaderLayout,
   Box,
   Flex,
   ContentLayout,
-  ButtonWrapper,
   Button,
 } from "@strapi/design-system";
-import { Layout } from "@strapi/design-system";
 
 const HomePage = () => {
   const [selectorLink, setSelectorLink] = useState([
     {
       id: 1,
-      link: "https://global-orca-jqw2m.ondigitalocean.app/admin",
+      link: "https://global-orca-jqw2m.ondigitalocean.app/admin/",
       label: "Global Data",
     },
     {
@@ -39,14 +38,17 @@ const HomePage = () => {
 
   const [selectedOption, setSelectedOption] = useState("");
 
+  const currentSite = window.location.origin + "/plugins/multi-site-selector";
+
   function clearSelected() {
     setSelectedOption("");
   }
 
-  function goToSelected() {}
-
   return (
     <Layout>
+      {console.log(currentSite)}
+      {console.log(selectorLink[0].link)}
+
       <Box background="neutral100">
         <HeaderLayout
           title="Multi Site Selector"
@@ -62,7 +64,23 @@ const HomePage = () => {
           onChange={setSelectedOption}
         >
           {selectorLink.map(({ id, link, label }) => (
-            <Option key={id} value={link}>
+            <Option
+              key={id}
+              value={link}
+              startIcon={
+                <div
+                  style={{
+                    height: "6px",
+                    borderRadius: "50%",
+                    width: "6px",
+                    background:
+                      link + "/plugins/multi-site-selector" == currentSite
+                        ? "blue"
+                        : "green",
+                  }}
+                />
+              }
+            >
               {label}
             </Option>
           ))}
@@ -74,12 +92,11 @@ const HomePage = () => {
             size="S"
             variant="secondary"
             onClick={() => {
-              window.open(selectedOption, "_blank");
+              window.open(selectedOption, "self");
             }}
           >
             Go To Site
           </Button>
-
           <Button onClick={() => clearSelected()}>Clear Selected Option</Button>
         </Flex>
       </ContentLayout>
